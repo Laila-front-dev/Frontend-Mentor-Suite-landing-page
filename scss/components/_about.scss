@@ -2,7 +2,7 @@
 
 .about__section {
   margin-block-start: $size-4;
-  padding-block-start: $size-2;
+  padding-block-start: $size-1;
   @include mq(large) {
     margin-block-start: $size-10;
   }
