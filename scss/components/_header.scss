@@ -1,0 +1,14 @@
+@use "../abstracts/" as *;
+
+.header {
+  padding-block-start: $size-0-5;
+  margin-block-end: $size-4;
+  @include mq(medium) {
+    padding-block-start: $size-2;
+    margin-block-end: $size-7;
+  }
+  @include mq(large) {
+    padding-block-start: $size-4;
+    margin-block-end: $size-5;
+  }
+}

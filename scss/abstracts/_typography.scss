@@ -1,0 +1,51 @@
+$ff-base: "Epilogue", sans-serif;
+
+$ff-body: $ff-base;
+
+$font-sizes: (
+  "small": (
+    "100": 0.875rem,
+    "200": 0.938rem,
+    "300": 1rem,
+    "400": 1.125rem,
+    "500": 2.375rem,
+    "600": 2.5rem,
+    "700": 3rem,
+  ),
+  "medium": (
+    "100": 1rem,
+    "200": 0.938rem,
+    "300": 1rem,
+    "400": 1.125rem,
+    "500": 3.5rem,
+    "600": 2.5rem,
+    "700": 3rem,
+  ),
+  "large": (
+    "100": 1rem,
+    "200": 0.938rem,
+    "300": 1.125rem,
+    "400": 1.125rem,
+    "500": 4.5rem,
+    "600": 3rem,
+    "700": 3rem,
+  ),
+);
+
+$font-size-100: var(--fs-100);
+$font-size-200: var(--fs-200);
+$font-size-300: var(--fs-300);
+$font-size-400: var(--fs-400);
+$font-size-500: var(--fs-500);
+$font-size-600: var(--fs-600);
+$font-size-700: var(--fs-700);
+
+$fs-body: $font-size-300;
+
+$-fw-400: 400;
+$-fw-700: 700;
+
+$fw-regular: $-fw-400;
+$fw-bold: $-fw-700;
+
+$fw-body: $fw-regular;

@@ -1,0 +1,33 @@
+$-clr-blue-900: hsl(219, 43%, 16%);
+$-clr-blue-700: hsl(218, 20%, 36%);
+$-clr-white: hsl(30, 29%, 97%);
+$-clr-brown-000: hsl(30, 33%, 93%);
+$-clr-purple-300: hsl(264, 100%, 69%);
+$-clr-pink-400: hsl(292, 76%, 54%);
+$-clr-orange-500: hsl(31, 100%, 65%);
+
+$light: (
+  "neutral": (
+    "000": $-clr-white,
+  ),
+  "accent": (
+    "000": $-clr-brown-000,
+    "300": $-clr-purple-300,
+    "400": $-clr-pink-400,
+    "500": $-clr-orange-500,
+  ),
+  "primary": (
+    "900": $-clr-blue-900,
+    "700": $-clr-blue-700,
+  ),
+);
+
+$color-neutral-000: var(--neutral-000);
+$color-accent-000: var(--accent-000);
+$color-accent-300: var(--accent-300);
+$color-accent-400: var(--accent-400);
+$color-accent-500: var(--accent-500);
+$color-primary-700: var(--primary-700);
+$color-primary-900: var(--primary-900);
+
+$body-text-color: $color-primary-900;

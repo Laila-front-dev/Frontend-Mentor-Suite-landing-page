@@ -1,0 +1,10 @@
+@use "../abstracts/" as *;
+
+.grid__event__columns {
+  display: grid;
+  gap: 3.5rem;
+  @include mq(large) {
+    grid-template-columns: 72% 1fr;
+    gap: 6rem;
+  }
+}

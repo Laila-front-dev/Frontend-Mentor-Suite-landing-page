@@ -1,0 +1,54 @@
+@use "../abstracts/" as *;
+
+.hero__section {
+  @include mq(medium) {
+    .bg__image {
+      min-height: 600px;
+      inset: 0;
+      background-image: url("../assets/images/image-hero-portrait.webp");
+      background-repeat: no-repeat;
+      background-position: top right;
+      padding-block-start: $size-8;
+    }
+  }
+  @include mq(large) {
+    .bg__image {
+      padding-block-start: $size-95;
+    }
+  }
+
+  .hero__image {
+    padding-block-start: $size-4;
+    img {
+      margin-inline: auto;
+    }
+    @include mq(medium) {
+      display: none;
+    }
+  }
+  .hero__numbers {
+    // margin-block-start: $size-4;
+    ul {
+      @include mq(medium) {
+        display: flex;
+        justify-content: space-around;
+      }
+      @include mq(large) {
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        gap: 3.938rem;
+      }
+      li {
+        display: grid;
+        text-align: center;
+        font-size: $font-size-300;
+        text-transform: uppercase;
+        span {
+          font-weight: $fw-bold;
+          font-size: $font-size-700;
+        }
+      }
+    }
+  }
+}

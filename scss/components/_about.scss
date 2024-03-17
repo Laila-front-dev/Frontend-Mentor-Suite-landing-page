@@ -1,0 +1,44 @@
+@use "../abstracts/" as *;
+
+.about__section {
+  margin-block-start: $size-4;
+  padding-block-start: $size-4;
+  @include mq(large) {
+    margin-block-start: $size-10;
+    padding-block-start: 0;
+  }
+  .about__details {
+    top: -3.6565rem;
+    position: relative;
+    text-align: center;
+    @include mq(large) {
+      text-align: left;
+      p {
+        width: 33ch;
+      }
+    }
+    p {
+      @include mq(medium) {
+        width: 51ch;
+
+        @include mq(large) {
+          width: 33ch;
+        }
+      }
+    }
+  }
+  .img {
+    position: relative;
+    z-index: 1;
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../assets/images/pattern-blur.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      inset: 0;
+      z-index: -1;
+    }
+  }
+}

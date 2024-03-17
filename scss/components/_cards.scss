@@ -1,0 +1,25 @@
+@use "../abstracts/" as *;
+
+.about__card {
+  background-color: $color-primary-900;
+  color: $color-neutral-000;
+  margin-block-start: 11.313rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  @include mq(large) {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-block-start: 3.438rem;
+    height: 545px;
+  }
+  img {
+    position: relative;
+    top: -11.313rem;
+    @include mq(large) {
+      top: -1.5rem;
+      bottom: 0;
+    }
+  }
+}

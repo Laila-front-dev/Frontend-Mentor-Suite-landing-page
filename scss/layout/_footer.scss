@@ -1,0 +1,36 @@
+@use "../abstracts/" as *;
+
+footer {
+  padding-block-start: $size-4;
+  padding-block-end: $size-4;
+  background: $color-accent-000;
+  position: relative;
+
+  @include mq(medium) {
+    position: absolute;
+    width: 100%;
+    top: 98rem;
+    height: 350px;
+    z-index: -1;
+    .copy {
+      margin-top: 0;
+    }
+  }
+  @include mq(large) {
+    position: absolute;
+    width: 100%;
+    top: 79rem;
+    height: 390px;
+    z-index: -1;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  ul {
+    li {
+      margin-inline: 1rem;
+    }
+  }
+}

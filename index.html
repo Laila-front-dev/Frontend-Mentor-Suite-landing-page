@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS LINK FILE -->
+    <link rel="stylesheet" href="scss/main.css" />
+    <title>Frontend Mentor | Suite landing page</title>
+  </head>
+  <body>
+    <header>
+      <div class="container | d-flex header">
+        <a href="index.html">
+          <img src="./assets/images/logo.svg" alt="suite logo" />
+        </a>
+        <button class="button" data-type="secondary">
+          Request Beta Access
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="hero__section">
+        <div class="container">
+          <div class="grid__event__columns">
+            <div class="event__columns">
+              <div class="bg__image flow">
+                <h1 class="heading-1">
+                  A <span>super <span class="border">solution</span> </span> for
+                  your <span>business.</span>
+                </h1>
+                <p>
+                  Our marketing and sales automations help you scale your
+                  outreach to get more leads for your company.
+                </p>
+                <button class="button" data-type="primary">
+                  Request Beta Access
+                </button>
+              </div>
+              <div class="hero__image">
+                <img
+                  src="./assets/images/image-hero-landscape.webp"
+                  alt="hero images"
+                />
+              </div>
+            </div>
+
+            <div class="hero__numbers">
+              <ul role="list">
+                <li><span>2K+</span>COMPANIES</li>
+                <li><span>8</span>LANGUAGES</li>
+                <li><span>1.2M</span>LEADS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about__section">
+        <div class="container | about__card">
+          <!-- <div> -->
+          <picture class="img">
+            <source
+              media="(max-width: 375px)"
+              srcset="./assets/images/image-jeremy-small.webp"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="./assets/images/image-jeremy-large.webp"
+            />
+            <img src="./assets/images/image-jeremy-small.webp" alt="jeremy" />
+          </picture>
+          <!-- </div> -->
+          <div class="about__details flow">
+            <h2 class="heading-2">It just <span>works.</span></h2>
+            <p>
+              “I really like how it is an all-in-one solution that handle many
+              of the tasks that you would normally need separate tools to do the
+              same job. This thing is a miracle worker.”
+            </p>
+            <p class="fw-bold">JEREMY ROBINSON</p>
+            <span>CMO, FYLO</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container | f-flex flow">
+        <div>
+          <img src="./assets/images/logo.svg" alt="suite logo" />
+        </div>
+        <div class="copy">
+          <p>Copyright - Suite</p>
+        </div>
+        <div>
+          <ul role="list" class="d-flex">
+            <li>
+              <a href="https://www.facebook.com/"
+                ><img src="./assets/images/icon-facebook.svg" alt="facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/"
+                ><img src="./assets/images/icon-twitter.svg" alt="twitter"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/"
+                ><img src="./assets/images/icon-instagram.svg" alt="instagram"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
