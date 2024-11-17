@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS LINK FILE -->
     <link rel="stylesheet" href="scss/main.css" />
+    <meta name="description" content="Frontend Mentor | Suite landing page" />
     <title>Frontend Mentor | Suite landing page</title>
   </head>
   <body>
@@ -29,7 +30,7 @@
         <div class="container">
           <div class="grid__event__columns">
             <div class="event__columns">
-              <div class="bg__image flow">
+              <div class="bg__image flow hidden">
                 <h1 class="heading-1">
                   A <span>super <span class="border">solution</span> </span> for
                   your <span>business.</span>
@@ -50,11 +51,16 @@
               </div>
             </div>
 
-            <div class="hero__numbers">
+            <div class="hero__numbers hidden">
               <ul role="list">
-                <li><span>2K+</span>COMPANIES</li>
-                <li><span>8</span>LANGUAGES</li>
-                <li><span>1.2M</span>LEADS</li>
+                <li>
+                  <span><span class="num" data-goal="2">0</span>K+</span
+                  >COMPANIES
+                </li>
+                <li><span class="num" data-goal="8">0</span>LANGUAGES</li>
+                <li>
+                  <span><span class="num" data-goal="1">0</span>.2M</span>LEADS
+                </li>
               </ul>
             </div>
           </div>
@@ -62,7 +68,7 @@
       </section>
 
       <section class="about__section">
-        <div class="container | about__card">
+        <div class="container | about__card hidden">
           <!-- <div> -->
           <picture class="img">
             <source
@@ -119,5 +125,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- JS  -->
+    <script src="main.js"></script>
   </body>
 </html>

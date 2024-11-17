@@ -1131,4 +1131,16 @@ p {
   background-size: contain;
   inset: 0;
   z-index: -1;
+}
+
+/* Scroll Animation */
+.hidden {
+  opacity: 0;
+  transform: translateX(-200px);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
 }/*# sourceMappingURL=main.css.map */
